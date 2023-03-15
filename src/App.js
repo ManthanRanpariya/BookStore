@@ -4,7 +4,8 @@
 // import Home from './page/Home';
 // import About from './page/About'
 // import Counter from './components/Counter'
-import List from './components/List'
+// import List from './components/List'
+import Title from './components/Title'
 
 
 
@@ -33,7 +34,8 @@ function App() {
          <Home /> */}
          
          {/* <Counter /> */}
-         <List />
+         {/* <List /> */}
+         <Title title="Manthan" description="Web Developer"/>
 
     </div>
   )
