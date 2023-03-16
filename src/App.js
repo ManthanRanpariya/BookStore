@@ -5,7 +5,9 @@
 // import About from './page/About'
 // import Counter from './components/Counter'
 // import List from './components/List'
-import Title from './components/Title'
+// import Title from './components/Title'
+import FocusInput from './components/FocusInput'
+// import InputRef from './components/InputRef'
 // import LoginForm from './components/LoginForm'
 
 
@@ -38,7 +40,8 @@ function App() {
          
          {/* <Counter /> */}
          {/* <List /> */}
-         <Title title="Manthan" description="Web Developer"/>
+         {/* <Title title="Manthan" description="Web Developer"/> */}
+         <FocusInput /> 
 
     </div>
   )
