@@ -1,7 +1,7 @@
 
 // import Home from './page/Home';
 // import Title from './components/Title';
-import Home from './page/Home';
+// import Home from './page/Home';
 // import About from './page/About'
 // import Counter from './components/Counter'
 // import List from './components/List'
@@ -9,6 +9,7 @@ import Home from './page/Home';
 // import FocusInput from './components/FocusInput'
 // import InputRef from './components/InputRef'
 // import LoginForm from './components/LoginForm'
+import RenderPropsComponent from "./components/RenderPropsComponent";
 
 
 
@@ -42,7 +43,12 @@ function App() {
          {/* <List /> */}
          {/* <Title title="Manthan" description="Web Developer"/> */}
          {/* <FocusInput />  */}
-         <Home/>
+         {/* <Home/> */}
+         <RenderPropsComponent render = {() => {
+        return(
+          <h3>I am coming from Render Props</h3>
+        )
+      }} />
 
     </div>
   )
