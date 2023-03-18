@@ -1,4 +1,5 @@
-
+import Consumer3 from "./components/Consumer3";
+import { UserProvider } from "./components/UserContex";
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
@@ -9,7 +10,7 @@
 // import FocusInput from './components/FocusInput'
 // import InputRef from './components/InputRef'
 // import LoginForm from './components/LoginForm'
-import RenderPropsComponent from "./components/RenderPropsComponent";
+// import RenderPropsComponent from "./components/RenderPropsComponent";
 
 
 
@@ -44,11 +45,9 @@ function App() {
          {/* <Title title="Manthan" description="Web Developer"/> */}
          {/* <FocusInput />  */}
          {/* <Home/> */}
-         <RenderPropsComponent render = {() => {
-        return(
-          <h3>I am coming from Render Props</h3>
-        )
-      }} />
+         <UserProvider value="Manthan Ranpariya">
+        <Consumer3/>
+      </UserProvider>
 
     </div>
   )
