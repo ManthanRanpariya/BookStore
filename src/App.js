@@ -1,5 +1,6 @@
-import Consumer3 from "./components/Consumer3";
-import { UserProvider } from "./components/UserContex";
+// import Consumer3 from "./components/Consumer3";
+// import { UserProvider } from "./components/UserContex";
+import Users from './components/Users';
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
@@ -15,6 +16,7 @@ import { UserProvider } from "./components/UserContex";
 
 
 import React from 'react'
+// import Users from "./components/Users";
 // import LogInForm from './components/LoginForm'
 
 function App() {
@@ -45,9 +47,10 @@ function App() {
          {/* <Title title="Manthan" description="Web Developer"/> */}
          {/* <FocusInput />  */}
          {/* <Home/> */}
-         <UserProvider value="Manthan Ranpariya">
+         {/* <UserProvider value="Manthan Ranpariya">
         <Consumer3/>
-      </UserProvider>
+      </UserProvider> */}
+      <Users />
 
     </div>
   )
