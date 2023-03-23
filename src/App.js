@@ -1,8 +1,9 @@
 import React from 'react'
+import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
 // import { UserProvider } from "./components/UserContex";
-import Users from './components/Users';
+// import Users from './components/Users';
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
@@ -51,8 +52,9 @@ function App() {
          {/* <UserProvider value="Manthan Ranpariya">
         <Consumer3/>
       </UserProvider> */}
-      <Users />
+      {/* <Users /> */}
       {/* <Post /> */}
+     < HooksMouse />
 
     </div>
   )
