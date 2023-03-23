@@ -1,6 +1,8 @@
+import React from 'react'
+import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
 // import { UserProvider } from "./components/UserContex";
-import Users from './components/Users';
+// import Users from './components/Users';
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
@@ -15,7 +17,6 @@ import Users from './components/Users';
 
 
 
-import React from 'react'
 // import Users from "./components/Users";
 // import LogInForm from './components/LoginForm'
 
@@ -50,7 +51,8 @@ function App() {
          {/* <UserProvider value="Manthan Ranpariya">
         <Consumer3/>
       </UserProvider> */}
-      <Users />
+      {/* <Users /> */}
+      <Post />
 
     </div>
   )
