@@ -1,142 +1,92 @@
-// import React, { Component } from 'react'
-// import "./LogInForm.css"
+import React, { useState } from 'react';
+import './LoginForm.css';
 
-// export default class LogInForm extends Component {
+// const LoginForm = () => {
+//   const [username, setUsername] = useState('');
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
 
-//     constructor(props) {
-//         super(props)
-//         this.state = {
-//             username:"",
-//             email:"",
-//             password:"",
-//         }
-//     }
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     alert(`Username: ${username}\nEmail: ${email}\nPassword: ${password}`);
+//   };
 
-// handleUsernameOnChange = (event) => {
-//     this.setState({
-//         username:event.target.value
-//     })
-
-//   }
-//    handleEmailOnChange = (event) => {
-//     this.setState({
-//         email:event.target.value
-//     })
-
-//   }
-//    handlePasswordOnChange = (event) => {
-//    this.setState({
-//         password:event.target.value
-//     })
-
-//   }
-//   handleSubmit = () => {
-//     alert(`${this.state.username} ${this.state.email} ${this.state.password}`)
-//   }
-
-//     render() {
-//     return (
-
-// <div className="container mt-5">
-//       <form onSubmit={this.handleSubmit}>
-//         <label htmlFor="username">Username</label>
+//   return (
+//     <div className="login">
+//       <form onSubmit={handleSubmit} className="login-form">
+//         <h2>Registration Form</h2>
+//         <label htmlFor="username">Username:</label>
 //         <input
 //           type="text"
 //           id="username"
-//           name="username"
-//           value={this.state.username}
-//           onChange={this.handleUsernameOnChange}
-//           placeholder="Enter your username"
+//           value={username}
+//           onChange={(e) => setUsername(e.target.value)}
 //         />
-//         <label htmlFor="username">Email</label>
+
+//         <label htmlFor="email">Email:</label>
 //         <input
-//           type="text"
+//           type="email"
 //           id="email"
-//           name="email"
-//           value={this.state.email}
-//           onChange={this.handleEmailOnChange}
-//           placeholder="Enter your email"
+//           value={email}
+//           onChange={(e) => setEmail(e.target.value)}
 //         />
 
 //         <label htmlFor="password">Password:</label>
 //         <input
 //           type="password"
 //           id="password"
-//           name="password"
-//           value={this.statepassword}
-//           onChange={this.handlePasswordOnChange}
-//           placeholder="Enter your password"
+//           value={password}
+//           onChange={(e) => setPassword(e.target.value)}
 //         />
 
-//         <input type="submit" value="Login" />
+//         <button type="submit">Submit</button>
 //       </form>
 //     </div>
+//   );
+// };
 
-//     )
-// }
+// export default LoginForm;
 
-// }
-import React, { useState } from "react";
-import "./LoginForm.css";
-function LogInForm() {
-  const [username, setUserName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const handleUsernameOnChange = (event) => {
-    setUserName(
-      event.target.value,
-    );
-  };
-  const handleEmailOnChange = (event) => {
-    setEmail(
-       event.target.value,
-    );
-  };
-  const handlePasswordOnChange = (event) => {
-    setPassword(
-       event.target.value,
-    );
-  };
+export default function LoginForm() {
+
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Username:${username} Email:${email} Password:${password}`);
+    alert(`Username: ${username}\nEmail: ${email}\nPassword: ${password}`);
   };
   return (
-    <div className="container mt-5">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Username</label>
+    <div className="login">
+      <form onSubmit={handleSubmit} className="login-form">
+        <h2>Registration Form</h2>
+        <label htmlFor="username">Username:</label>
         <input
           type="text"
           id="username"
-          name="username"
           value={username}
-          onChange={handleUsernameOnChange}
-          placeholder="Enter your username"
+          onChange={(e) => setUsername(e.target.value)}
         />
-        <label htmlFor="username">Email</label>
+
+        <label htmlFor="email">Email:</label>
         <input
-          type="text"
+          type="email"
           id="email"
-          name="email"
           value={email}
-          onChange={handleEmailOnChange}
-          placeholder="Enter your email"
+          onChange={(e) => setEmail(e.target.value)}
         />
 
         <label htmlFor="password">Password:</label>
         <input
           type="password"
           id="password"
-          name="password"
           value={password}
-          onChange={handlePasswordOnChange}
-          placeholder="Enter your password"
+          onChange={(e) => setPassword(e.target.value)}
         />
 
-        <input type="submit" value="Login" />
+        <button type="submit">Submit</button>
       </form>
     </div>
-  );
+  )
 }
-
-export default LogInForm;
