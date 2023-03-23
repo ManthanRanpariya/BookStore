@@ -2,7 +2,7 @@ import React from 'react'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
 // import { UserProvider } from "./components/UserContex";
-// import Users from './components/Users';
+import Users from './components/Users';
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
@@ -12,7 +12,7 @@ import React from 'react'
 // import Title from './components/Title'
 // import FocusInput from './components/FocusInput'
 // import InputRef from './components/InputRef'
-import LoginForm from './components/LoginForm'
+// import LoginForm from './components/LoginForm'
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 
 
@@ -32,7 +32,7 @@ function App() {
   // };
   return (
     <div>
-      <LoginForm />
+      {/* <LoginForm /> */}
       {/* {page === "Home" ? <Home/> : <About/>}
     <button onClick={handleChange}>Change Page</button> */}
       {/* <Title name="Title1"/>
@@ -51,7 +51,7 @@ function App() {
          {/* <UserProvider value="Manthan Ranpariya">
         <Consumer3/>
       </UserProvider> */}
-      {/* <Users /> */}
+      <Users />
       {/* <Post /> */}
 
     </div>
