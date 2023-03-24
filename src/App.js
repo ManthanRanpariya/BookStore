@@ -1,5 +1,6 @@
 import React from 'react'
-import HooksMouse from './components/HooksMouse'
+  import PostDetails from './components/PostDetails'
+// import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
 // import { UserProvider } from "./components/UserContex";
@@ -54,7 +55,8 @@ function App() {
       </UserProvider> */}
       {/* <Users /> */}
       {/* <Post /> */}
-     < HooksMouse />
+     {/* < HooksMouse /> */}
+     <PostDetails />
 
     </div>
   )
