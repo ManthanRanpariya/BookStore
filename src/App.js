@@ -4,13 +4,14 @@ import React from 'react'
 // import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
-import CounterHook from './components/CounterHook'
+// import CounterHook from './components/CounterHook'
 // import { UserProvider } from "./components/UserContex";
 // import Users from './components/Users';
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
 // import About from './page/About'
+import UDetails from './components/UDetails'
 // import Counter from './components/Counter'
 // import List from './components/List'
 // import Title from './components/Title'
@@ -62,7 +63,8 @@ function App() {
       {/* <Post /> */}
      {/* < HooksMouse /> */}
      {/* <PostDetails /> */}
-     <CounterHook/>
+     {/* <CounterHook/> */}
+     <UDetails/>
 
     </div>
   )
