@@ -1,9 +1,10 @@
 import React from 'react'
   // import PostDetails from './components/PostDetails'
-  import Consumer2 from "./components/Consumer2";
+  // import Consumer2 from "./components/Consumer2";
 // import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
+import CounterHook from './components/CounterHook'
 // import { UserProvider } from "./components/UserContex";
 // import Users from './components/Users';
 // import Home from './page/Home';
@@ -44,9 +45,9 @@ function App() {
          <Title title="mathan"desc="is a Developer"/>
          <Home /> */}
 
-        <UserContext.Provider value="Manthan Ranpariya">
+        {/* <UserContext.Provider value="Manthan Ranpariya">
         <Consumer2/>
-        </UserContext.Provider>
+        </UserContext.Provider> */}
 
          
          {/* <Counter /> */}
@@ -61,6 +62,7 @@ function App() {
       {/* <Post /> */}
      {/* < HooksMouse /> */}
      {/* <PostDetails /> */}
+     <CounterHook/>
 
     </div>
   )
