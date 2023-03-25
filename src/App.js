@@ -1,5 +1,6 @@
 import React from 'react'
-  import PostDetails from './components/PostDetails'
+  // import PostDetails from './components/PostDetails'
+  import Consumer2 from "./components/Consumer2";
 // import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
@@ -16,12 +17,10 @@ import React from 'react'
 // import InputRef from './components/InputRef'
 // import LoginForm from './components/LoginForm'
 // import RenderPropsComponent from "./components/RenderPropsComponent";
-
-
-
 // import Users from "./components/Users";
 // import LogInForm from './components/LoginForm'
 
+export const UserContext = React.createContext()
 function App() {
   // const [page, setPage] = React.useState("Home");
 
@@ -44,6 +43,11 @@ function App() {
         
          <Title title="mathan"desc="is a Developer"/>
          <Home /> */}
+
+        <UserContext.Provider value="Manthan Ranpariya">
+        <Consumer2/>
+        </UserContext.Provider>
+
          
          {/* <Counter /> */}
          {/* <List /> */}
@@ -56,7 +60,7 @@ function App() {
       {/* <Users /> */}
       {/* <Post /> */}
      {/* < HooksMouse /> */}
-     <PostDetails />
+     {/* <PostDetails /> */}
 
     </div>
   )
