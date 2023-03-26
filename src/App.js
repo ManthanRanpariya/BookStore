@@ -1,13 +1,13 @@
-import React, {useReducer} from 'react'
+import React from 'react'
   // import PostDetails from './components/PostDetails'
-  import Consumer2 from "./components/Consumer2";
-  import Consumer1 from './components/Consumer1';
+  // import Consumer2 from "./components/Consumer2";
+  // import Consumer1 from './components/Consumer1';
 // import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
 // import CounterHook from './components/CounterHook'
 // import { UserProvider } from "./components/UserContex";
-// import Users from './components/Users';
+import Users from './components/Users';
 // import Home from './page/Home';
 // import Title from './components/Title';
 // import Home from './page/Home';
@@ -24,25 +24,25 @@ import React, {useReducer} from 'react'
 // import LogInForm from './components/LoginForm'
 
 // export const UserContext = React.createContext()
-export const counterContext = React.createContext()
+// export const counterContext = React.createContext()
 
-const initialValue =0;
-const reducer = (state,action) => {
-    switch (action) {
-        case 'increment':
-            return state + 1
-        case 'decrement':
-            return state - 1
-        case 'reset':
-            return initialValue
-        default:
-            return state
-    }
-}
+// const initialValue =0;
+// const reducer = (state,action) => {
+//     switch (action) {
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state - 1
+//         case 'reset':
+//             return initialValue
+//         default:
+//             return state
+//     }
+// }
 
 function App() {
 
-  const[count,dispatch] = useReducer(reducer,initialValue)
+  // const[count,dispatch] = useReducer(reducer,initialValue)
   // const [page, setPage] = React.useState("Home");
 
   // const handleChange = () => {
@@ -78,20 +78,20 @@ function App() {
          {/* <UserProvider value="Manthan Ranpariya">
         <Consumer3/>
       </UserProvider> */}
-      {/* <Users /> */}
+      <Users />
       {/* <Post /> */}
      {/* < HooksMouse /> */}
      {/* <PostDetails /> */}
      {/* <CounterHook/> */}
      {/* <UDetails/> */}
-
+{/* 
      <counterContext.Provider value={{countState: count, countDispatch: dispatch}}>
         <div>
           Count - {count}
           <Consumer1/>
           <Consumer2/>
         </div>
-      </counterContext.Provider>
+      </counterContext.Provider> */}
 
     </div>
   )
