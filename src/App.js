@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useReducer} from 'react'
   // import PostDetails from './components/PostDetails'
-  // import Consumer2 from "./components/Consumer2";
+  import Consumer2 from "./components/Consumer2";
+  import Consumer1 from './components/Consumer1';
 // import HooksMouse from './components/HooksMouse'
 // import Post from './components/Post'
 // import Consumer3 from "./components/Consumer3";
@@ -11,7 +12,7 @@ import React from 'react'
 // import Title from './components/Title';
 // import Home from './page/Home';
 // import About from './page/About'
-import UDetails from './components/UDetails'
+// import UDetails from './components/UDetails'
 // import Counter from './components/Counter'
 // import List from './components/List'
 // import Title from './components/Title'
@@ -22,8 +23,26 @@ import UDetails from './components/UDetails'
 // import Users from "./components/Users";
 // import LogInForm from './components/LoginForm'
 
-export const UserContext = React.createContext()
+// export const UserContext = React.createContext()
+export const counterContext = React.createContext()
+
+const initialValue =0;
+const reducer = (state,action) => {
+    switch (action) {
+        case 'increment':
+            return state + 1
+        case 'decrement':
+            return state - 1
+        case 'reset':
+            return initialValue
+        default:
+            return state
+    }
+}
+
 function App() {
+
+  const[count,dispatch] = useReducer(reducer,initialValue)
   // const [page, setPage] = React.useState("Home");
 
   // const handleChange = () => {
@@ -64,7 +83,15 @@ function App() {
      {/* < HooksMouse /> */}
      {/* <PostDetails /> */}
      {/* <CounterHook/> */}
-     <UDetails/>
+     {/* <UDetails/> */}
+
+     <counterContext.Provider value={{countState: count, countDispatch: dispatch}}>
+        <div>
+          Count - {count}
+          <Consumer1/>
+          <Consumer2/>
+        </div>
+      </counterContext.Provider>
 
     </div>
   )
